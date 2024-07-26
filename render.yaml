@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python3 -m bot"
+    repo: https://github.com/yourusername/your-repo
+    branch: main
+    runtime: python-3.11
