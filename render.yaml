@@ -6,4 +6,4 @@ services:
     startCommand: "python3 -m bot"
     repo: https://github.com/yourusername/your-repo
     branch: main
-    runtime: python-3.11
+    runtime: python-3.8.12

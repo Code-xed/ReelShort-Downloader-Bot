@@ -1,5 +1,5 @@
 # Use the official Python 3.11 image based on Alpine Linux
-FROM python:3.11-alpine
+FROM python:3.8-alpine
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
