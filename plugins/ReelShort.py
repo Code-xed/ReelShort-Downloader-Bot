@@ -74,6 +74,4 @@ def getEpisodeList(book_id):
 	chapters = r.get("data", {}).get("chapter_lists", [])
 	episodes = [chapter.get("video_id") for chapter in chapters]
 	return episodes
-p = getEpisodeList("668c275431237d44a301fc09")
-print(p)
 #process_episodes(episodes, base_url)
