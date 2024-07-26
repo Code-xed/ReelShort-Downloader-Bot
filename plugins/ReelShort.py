@@ -70,9 +70,11 @@ def getEpisodeList(book_id):
 	data = f"book_id={book_id}"#668c275431237d44a301fc09 #6651191b7812e57a1e0ddb5c"
 	res = requests.post(url, headers=headers, data=data)
 	print(res)
+	'''
 	r = res.json()
 	print(r)
 	chapters = r.get("data", {}).get("chapter_lists", [])
 	episodes = [chapter.get("video_id") for chapter in chapters]
 	return episodes
+	'''
 #process_episodes(episodes, base_url)
