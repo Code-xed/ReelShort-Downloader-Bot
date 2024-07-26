@@ -1,5 +1,5 @@
 from pyrogram import Client
-#from Config import api_id, api_hash, bot_token
+import os
 
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
