@@ -1,4 +1,3 @@
-pyrogram
-tgCrypto
-requests
-pySmartDL
+pyrogram==2.0.106
+tgCrypto==1.2.5
+requests==2.32.3
