@@ -7,9 +7,12 @@ import os
 def extract_book_id(url):
     base_url = "https://stardust-h5.stardustgod.com/reelshort/shareBookPage?book_id="
     title_param = "&title="
+    return url[len(base_url):url.index(title_param)]
+    '''
     if url.startswith(base_url) and title_param in url:
-        return url[len(base_url):url.index(title_param)]
+        
     return False
+    '''
 
 @Client.on_message(filters.command("download"))
 async def handle_url(_, message):
